@@ -9,6 +9,8 @@ import SwiftUI
 
 @main
 struct VisionPro_FunApp: App {
+    @State private var currentStyle: ImmersionStyle = .progressive
+
     var body: some Scene {
         WindowGroup {
             ContentView()
@@ -16,6 +18,8 @@ struct VisionPro_FunApp: App {
 
         ImmersiveSpace(id: "ImmersiveSpace") {
             ImmersiveView()
+                .preferredSurroundingsEffect(.systemDark)
         }
+        .immersionStyle(selection: $currentStyle, in: .mixed, .progressive, .full)
     }
 }
