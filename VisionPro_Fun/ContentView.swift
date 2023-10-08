@@ -25,6 +25,7 @@ struct ContentView: View {
 
     @Environment(\.openImmersiveSpace) var openImmersiveSpace
     @Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace
+    @Environment(\.dismiss) var dismiss
 
     var body: some View {
         let arContentList: [ARContentInfo] = [
@@ -55,6 +56,7 @@ struct ContentView: View {
                     switch await openImmersiveSpace(id: "ImmersiveSpace") {
                     case .opened:
                         immersiveSpaceIsShown = true
+                        dismiss()
                     case .error:
                         fallthrough
                     case .userCancelled:
