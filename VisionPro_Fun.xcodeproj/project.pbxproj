@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		A1857D7A2ACC523D00EE2396 /* ContentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1857D792ACC523D00EE2396 /* ContentDetailView.swift */; };
-		A1857D7D2AD4976700EE2396 /* Areas.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1857D7C2AD4976700EE2396 /* Areas.swift */; };
+		A1857D7D2AD4976700EE2396 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1857D7C2AD4976700EE2396 /* NavigationView.swift */; };
 		A1857D802AD4995A00EE2396 /* Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1857D7F2AD4995A00EE2396 /* Area.swift */; };
 		A1857D822AD49AA800EE2396 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1857D812AD49AA800EE2396 /* DataModel.swift */; };
 		A1857D842AD49CDF00EE2396 /* NavigationToAreas.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1857D832AD49CDF00EE2396 /* NavigationToAreas.swift */; };
-		A1857D8A2AD4B95A00EE2396 /* EarthArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1857D892AD4B95A00EE2396 /* EarthArea.swift */; };
+		A1857D8A2AD4B95A00EE2396 /* EarthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1857D892AD4B95A00EE2396 /* EarthView.swift */; };
 		A1C67D4D2AA0668C00886F82 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = A1C67D4C2AA0668C00886F82 /* RealityKitContent */; };
 		A1C67D4F2AA0668C00886F82 /* VisionPro_FunApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C67D4E2AA0668C00886F82 /* VisionPro_FunApp.swift */; };
 		A1C67D512AA0668C00886F82 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C67D502AA0668C00886F82 /* ContentView.swift */; };
@@ -34,11 +34,11 @@
 
 /* Begin PBXFileReference section */
 		A1857D792ACC523D00EE2396 /* ContentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailView.swift; sourceTree = "<group>"; };
-		A1857D7C2AD4976700EE2396 /* Areas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Areas.swift; sourceTree = "<group>"; };
+		A1857D7C2AD4976700EE2396 /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
 		A1857D7F2AD4995A00EE2396 /* Area.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Area.swift; sourceTree = "<group>"; };
 		A1857D812AD49AA800EE2396 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		A1857D832AD49CDF00EE2396 /* NavigationToAreas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationToAreas.swift; sourceTree = "<group>"; };
-		A1857D892AD4B95A00EE2396 /* EarthArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthArea.swift; sourceTree = "<group>"; };
+		A1857D892AD4B95A00EE2396 /* EarthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthView.swift; sourceTree = "<group>"; };
 		A1C67D472AA0668C00886F82 /* VisionPro_Fun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisionPro_Fun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C67D4B2AA0668C00886F82 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		A1C67D4E2AA0668C00886F82 /* VisionPro_FunApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionPro_FunApp.swift; sourceTree = "<group>"; };
@@ -70,14 +70,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A1857D7B2AD4971000EE2396 /* Areas */ = {
+		A1857D7B2AD4971000EE2396 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A1857D7C2AD4976700EE2396 /* Areas.swift */,
+				A1857D7C2AD4976700EE2396 /* NavigationView.swift */,
 				A1857D832AD49CDF00EE2396 /* NavigationToAreas.swift */,
-				A1857D892AD4B95A00EE2396 /* EarthArea.swift */,
+				A1857D892AD4B95A00EE2396 /* EarthView.swift */,
 			);
-			path = Areas;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		A1857D7E2AD4991C00EE2396 /* Models */ = {
@@ -112,7 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				A1C67D4E2AA0668C00886F82 /* VisionPro_FunApp.swift */,
-				A1857D7B2AD4971000EE2396 /* Areas */,
+				A1857D7B2AD4971000EE2396 /* Views */,
 				A1857D7E2AD4991C00EE2396 /* Models */,
 				A1C67D502AA0668C00886F82 /* ContentView.swift */,
 				A1857D792ACC523D00EE2396 /* ContentDetailView.swift */,
@@ -252,9 +252,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1C67D512AA0668C00886F82 /* ContentView.swift in Sources */,
-				A1857D8A2AD4B95A00EE2396 /* EarthArea.swift in Sources */,
+				A1857D8A2AD4B95A00EE2396 /* EarthView.swift in Sources */,
 				A1857D842AD49CDF00EE2396 /* NavigationToAreas.swift in Sources */,
-				A1857D7D2AD4976700EE2396 /* Areas.swift in Sources */,
+				A1857D7D2AD4976700EE2396 /* NavigationView.swift in Sources */,
 				A1C67D4F2AA0668C00886F82 /* VisionPro_FunApp.swift in Sources */,
 				A1C67D532AA0668C00886F82 /* ImmersiveView.swift in Sources */,
 				A1857D802AD4995A00EE2396 /* Area.swift in Sources */,

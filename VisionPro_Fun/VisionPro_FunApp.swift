@@ -13,7 +13,7 @@ struct VisionPro_FunApp: App {
 
     var body: some Scene {
         WindowGroup {
-            Areas()
+            NavigationView()
             //ContentView()
                 .glassBackgroundEffect()
         }
