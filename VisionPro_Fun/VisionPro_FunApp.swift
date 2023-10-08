@@ -14,6 +14,7 @@ struct VisionPro_FunApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .glassBackgroundEffect()
         }
 
         ImmersiveSpace(id: "ImmersiveSpace") {
