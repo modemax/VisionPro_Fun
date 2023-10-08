@@ -9,13 +9,15 @@ import SwiftUI
 
 @main
 struct VisionPro_FunApp: App {
-    @State private var currentStyle: ImmersionStyle = .progressive
+    @State private var currentStyle: ImmersionStyle = .full
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Areas()
+            //ContentView()
                 .glassBackgroundEffect()
         }
+        .defaultSize(width: 810, height: 510)
 
         ImmersiveSpace(id: "ImmersiveSpace") {
             ImmersiveView()

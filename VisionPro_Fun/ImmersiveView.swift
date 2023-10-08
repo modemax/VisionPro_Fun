@@ -13,7 +13,7 @@ struct ImmersiveView: View {
     var body: some View {
         RealityView { content in
             // Add the initial RealityKit content
-            guard let entity = try? await Entity(named: "Earth", in: realityKitContentBundle) else {
+            guard let entity = try? await Entity(named: "Immersive", in: realityKitContentBundle) else {
                 fatalError("Unable to load ImmersiveView Entity")
             }
             content.add(entity)
