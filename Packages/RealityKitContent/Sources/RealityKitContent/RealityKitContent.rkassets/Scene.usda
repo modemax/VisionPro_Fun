@@ -12,15 +12,6 @@ def Xform "Root"
         bindMaterialAs = "weakerThanDescendants"
     )
 
-    def "_GridMaterial" (
-        active = true
-        prepend references = @_GridMaterial.usda@
-    )
-    {
-        float3 xformOp:scale = (1, 1, 1)
-        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
-    }
-
     def "Earth" (
         active = true
         prepend references = @Earth.usdz@
@@ -28,6 +19,26 @@ def Xform "Root"
     {
         float3 xformOp:scale = (1, 1, 1)
         uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        def RealityKitComponent "Collider"
+        {
+            uint group = 1
+            uniform token info:id = "RealityKit.Collider"
+            uint mask = 4294967295
+            token type = "Default"
+
+            def RealityKitStruct "Shape"
+            {
+                float3 extent = (0.2050812, 0.205, 0.20522633)
+                float radius = 0.102613166
+                token shapeType = "Sphere"
+            }
+        }
+
+        def RealityKitComponent "InputTarget"
+        {
+            uniform token info:id = "RealityKit.InputTarget"
+        }
     }
 }
 
